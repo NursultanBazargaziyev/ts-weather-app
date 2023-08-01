@@ -17,3 +17,9 @@ export type WeatherType = {
   weatherDescription: string;
   weatherIconId: string;
 };
+
+export type WeatherFooterProps = {
+  name: string;
+  feelsLike: number;
+  unit: string;
+};

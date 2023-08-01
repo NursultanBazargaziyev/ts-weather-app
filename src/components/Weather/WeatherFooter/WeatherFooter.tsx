@@ -1,11 +1,8 @@
 import React, { FC } from "react";
 import { Box, Typography } from "@mui/material";
+import { WeatherFooterProps } from "src/typings/WeatherType";
 
-const WeatherFooter: FC<{
-  name: string;
-  feelsLike: number;
-  unit: string;
-}> = ({ name, feelsLike, unit }) => (
+const WeatherFooter: FC<WeatherFooterProps> = ({ name, feelsLike, unit }) => (
   <Box
     sx={{
       display: "flex",

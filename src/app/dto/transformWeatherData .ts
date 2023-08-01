@@ -1,4 +1,3 @@
-// transformWeatherData.ts
 import { WeatherType } from "src/typings/WeatherType";
 
 interface RawWeatherDataType {

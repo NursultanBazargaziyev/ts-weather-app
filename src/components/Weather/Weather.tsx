@@ -2,9 +2,9 @@ import React, { FC, useState } from "react";
 import { Box, SelectChangeEvent } from "@mui/material";
 import { WeatherProps } from "src/typings/WeatherType";
 import { UNITS, UnitKeys } from "src/constants";
-import WeatherInfo from "./WeatherInfo";
-import WeatherFooter from "./WeatherFooter";
-import WeatherUnitSelector from "./WeatherUnitSelector";
+import WeatherInfo from "./WeatherInfo/WeatherInfo";
+import WeatherFooter from "./WeatherFooter/WeatherFooter";
+import WeatherUnitSelector from "./WeatherUnitSelector/WeatherUnitSelector";
 
 const Weather: FC<WeatherProps> = ({ weather, setMetrics }) => {
   const [selectedUnit, setSelectedUnit] = useState<UnitKeys>("metric");
